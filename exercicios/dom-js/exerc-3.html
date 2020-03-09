@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exerc-3</title>
+</head>
+<body>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+        <script>
+
+            var listElement = document.querySelectorAll('li');
+            // console.log(listElement);
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+            tamanho = nomes.length;
+
+            for (let i = 0; i < tamanho; i++) {
+                var textElement = document.createTextNode(nomes[i]);
+                listElement[i].appendChild(textElement);
+            }
+
+
+
+        </script>
+
+
+</body>
+</html>
