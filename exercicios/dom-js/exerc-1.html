@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exerc_01</title>
+</head>
+<body>
+
+    <button class="btn">buttao</button>
+
+    <div class="divi">
+
+    </div>
+    <script>
+        var btn = document.querySelector(".btn");
+
+        btn.style.width = '100px';
+        btn.style.height = '100px';
+        btn.style.backgroundColor = '#f55';
+
+        btn.onclick = function() {
+
+            var buttonElement = document.createElement('button');
+            buttonElement.setAttribute('name', 'nome');
+
+            buttonElement.style.width = '100px';
+            buttonElement.style.height = '100px';
+            buttonElement.style.backgroundColor = 'blue';
+
+            var divi = document.querySelector('.divi');
+            divi.appendChild(buttonElement);
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
