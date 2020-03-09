@@ -14,13 +14,18 @@
 
         <script>
 
+            // pegando todas as li e salvando em uma lista
             var listElement = document.querySelectorAll('li');
-            // console.log(listElement);
+
+            //criando vetor e salvando seu tamanho e uma variavel
             var nomes = ["Diego", "Gabriel", "Lucas"];
             tamanho = nomes.length;
 
+            //loop que percorre até o tamanho do vetor
             for (let i = 0; i < tamanho; i++) {
+                // salva cada elemento do vetor em uma variavel (a cada iteração)
                 var textElement = document.createTextNode(nomes[i]);
+                //coloca na lista a variavel com os elementos do vetor
                 listElement[i].appendChild(textElement);
             }
 
