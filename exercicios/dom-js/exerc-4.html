@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exerc-3</title>
+</head>
+<body>
+
+<input type="text" name="nome">
+<button onClick="adicionar()">Adicionar</button>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<script>
+
+    // pegando todas as li e salvando em uma lista
+    var listElement = document.querySelectorAll('li');
+    var inputElement = document.querySelector('input[name=nome]');
+
+    // criando vetor e salvando seu tamanho e uma variavel
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    tamanho = nomes.length;
+
+    // loop que percorre até o tamanho do vetor
+    for (let i = 0; i < tamanho; i++) {
+        // salva cada elemento do vetor em uma variavel (a cada iteração)
+        var textElement = document.createTextNode(nomes[i]);
+        // coloca na lista a variavel com os elementos do vetor
+        listElement[i].appendChild(textElement);
+    }
+
+
+    function adicionar() {
+        if(inputElement.value != ""){
+
+        var text = inputElement.value;
+        var textElements = document.createTextNode(text);
+
+        var newElement = document.createElement('li');
+        newElement.appendChild(textElements);
+
+        var listElements = document.querySelector('ul');
+        listElements.appendChild(newElement);
+        inputElement.value = "";
+        }
+        else
+            alert("digite");
+    }
+
+</script>
+
+
+</body>
+</html>
