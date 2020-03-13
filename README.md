@@ -1,6 +1,7 @@
 # Rocketseat
   ---
-  - Started
+  ## Started
+  
     - Curso Javascript
       - Aprendendo
          - Introdução
