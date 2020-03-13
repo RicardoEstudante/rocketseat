@@ -1,11 +1,11 @@
 # rocketseat
-  
+  ---
   - Started
     - Curso Javascript
-      - App todos
       - Aprendendo
          - Introdução
          - DOM
+         - App todos
          - Assincrono
             - AJAX
             - Promises
