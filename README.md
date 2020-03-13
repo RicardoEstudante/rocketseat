@@ -1,14 +1,14 @@
 # Rocketseat (Started)
   ---
 - Curso Javascript
-    1. Introdução
+    1. App todos
+    2. Introdução
          - DOM
-         - App todos
          - Assincrono
             - AJAX
             - Promises
-            - Axios
-     2. Exercicios
+            - Axios      
+    3. Exercicios
         - Lista introdução
         - Lista DOM
         - Lista Assincrono
