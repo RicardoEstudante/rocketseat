@@ -1,5 +1,4 @@
-# Rocketseat
-  ## Started
+# Rocketseat (Started)
   ---
     - Curso Javascript
       - Aprendendo
@@ -16,4 +15,5 @@
         - Lista Assincrono
         
     ---
+    
     - Curso Javascript ES6
