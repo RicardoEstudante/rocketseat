@@ -1,4 +1,4 @@
-# rocketseat
+# Rocketseat
   ---
   - Started
     - Curso Javascript
