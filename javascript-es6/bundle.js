@@ -1,30 +1,24 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var TodoList = /*#__PURE__*/function () {
-  function TodoList() {
-    _classCallCheck(this, TodoList);
-
-    this.todos = [];
+var user = {
+  nome: 'Ricardo',
+  idade: 23,
+  endereco: {
+    cidade: 'Rio do Sul',
+    estado: 'SC'
   }
+};
 
-  _createClass(TodoList, null, [{
-    key: "addTodo",
-    value: function addTodo() {
-      this.todos.push('New all');
-      console.log(this.todos);
-    }
-  }]);
+function showName(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade;
+  console.log(nome, idade);
+}
 
-  return TodoList;
-}();
-
-TodoList.addTodo();
-TodoList.addTodo();
-TodoList.addTodo();
-TodoList.addTodo();
+showName(user);
+var nome = user.nome,
+    idade = user.idade,
+    cidade = user.endereco.cidade;
+console.log(nome);
+console.log(idade);
+console.log(cidade);
