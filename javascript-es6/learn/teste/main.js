@@ -1,15 +1,20 @@
-class TodoList {
-    constructor() {
-        this.todos = [];
-    }
+const user = {
+    nome: 'Ricardo',
+    idade: 23,
+    endereco: {
+        cidade: 'Rio do Sul',
+        estado: 'SC',
+    },
+};
 
-    static addTodo() {
-        this.todos.push('New all');
-        console.log(this.todos);
-    }
+function showName({nome , idade}) {
+    console.log(nome, idade);
 }
 
-TodoList.addTodo();
-TodoList.addTodo();
-TodoList.addTodo();
-TodoList.addTodo();
+showName(user);
+
+const { nome, idade, endereco: { cidade} } = user;
+
+console.log(nome);
+console.log(idade);
+console.log(cidade);

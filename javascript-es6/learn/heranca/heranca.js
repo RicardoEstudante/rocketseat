@@ -24,4 +24,4 @@ var MinhaLista = new TodoList();
 
 document.getElementById('novotodo').onclick = function ()  {
     minhaLista.add('new todo')
-}
+};
