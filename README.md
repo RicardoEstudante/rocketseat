@@ -14,3 +14,13 @@
         - Lista Assincrono
 ---
 - Curso Javascript ES6
+    1. Novos Conceitos
+        - Arrays
+        - Arrow-funtions
+        - Class
+        - Static
+        - Default-values
+        - Extends
+        - Const/Let
+        - Rest/Spread
+    2. 
