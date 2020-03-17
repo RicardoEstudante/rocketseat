@@ -1,20 +1,20 @@
 
-class Admin {
-
-}
-
-class User extends Admin{
+class User {
     constructor(email, passwd) {
-        super()
-
-
+        this.email = email;
+        this.senha = passwd;
     }
 
-
     isAdmin() {
-        if(admin == true){
-            return true
-        }
+        return this.admin === true;
+    }
+}
+
+class Admin extends User{
+    constructor(email, passwd) {
+        super(email, passwd);
+
+        this.admin = true;
     }
 }
 
