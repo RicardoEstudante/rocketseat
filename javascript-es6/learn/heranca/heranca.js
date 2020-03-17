@@ -12,7 +12,6 @@ class List {
 class TodoList extends List{
     constructor() {
         super();
-
         this.user = "ricardo";
     }
     showUser(){
@@ -22,6 +21,3 @@ class TodoList extends List{
 
 var MinhaLista = new TodoList();
 
-document.getElementById('novotodo').onclick = function ()  {
-    minhaLista.add('new todo')
-};

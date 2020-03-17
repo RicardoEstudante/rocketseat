@@ -12,11 +12,8 @@ var usuarios = [
 // O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
 
 function saida(usuarios) {
-
-
-
     for(let user of usuarios){
-        console.log("O " + user.nome + " possui as habilidade " + user.habilidades);
+        console.log("O " + user.nome + " possui as habilidade " + user.habilidades.join(", "));
     }
 }
 

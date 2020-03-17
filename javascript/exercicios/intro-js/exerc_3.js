@@ -8,14 +8,13 @@ function temHabilidade(skills) {
     }
     return false;
 }
+
  function temHabilidade2(skills) {
          if(skills.indexOf("Javascript") != 1){
             return true;
          }
     return false;
  }
-
-
 
 var skills = ["Javascript", "ReactJS", "React Native"];
 var teste = temHabilidade(skills);

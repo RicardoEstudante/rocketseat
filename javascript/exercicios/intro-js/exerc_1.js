@@ -6,4 +6,13 @@ var endereco = {
     uf: "SP"
 };
 
-console.log(" O usuario mora em", endereco.cidade, "/" , endereco.uf, " no bairro", endereco.bairro,"na rua", endereco.rua, "com n°", endereco.numero)
+function showMessegen(endereco) {
+    return (
+        " O usuario mora em " + endereco.cidade +
+        "/" + endereco.uf +
+        " no bairro " + endereco.bairro +
+        " na rua " + endereco.rua +
+        " com n° " + endereco.numero)
+}
+
+console.log(showMessegen(endereco));
