@@ -6,32 +6,26 @@
 </head>
 <body>
 
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+    <ul></ul>
 
-        <script>
-
-            // pegando todas as li e salvando em uma lista
-            var listElement = document.querySelectorAll('li');
-
+    <script>
             //criando vetor e salvando seu tamanho e uma variavel
             var nomes = ["Diego", "Gabriel", "Lucas"];
-            tamanho = nomes.length;
+            // pegando todas as li e salvando em uma lista
+            var listElement = document.querySelector('ul');
+
 
             //loop que percorre até o tamanho do vetor
-            for (let i = 0; i < tamanho; i++) {
+            for (nome of nomes) {
+                // criando o elemento da lista
+                var liElement = document.createElement('li');
                 // salva cada elemento do vetor em uma variavel (a cada iteração)
-                var textElement = document.createTextNode(nomes[i]);
+                var textElement = document.createTextNode(nome);
                 //coloca na lista a variavel com os elementos do vetor
-                listElement[i].appendChild(textElement);
+                liElement.appendChild(textElement);
+                listElement.appendChild(liElement);
             }
-
-
-
-        </script>
+    </script>
 
 
 </body>

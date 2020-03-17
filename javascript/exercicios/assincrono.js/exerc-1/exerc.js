@@ -1,21 +1,20 @@
 var inputElement = document.querySelector('input[name=nome]');
-do {
+if (inputElement.value < 0){
+    alert(" Idade invalida ");
+}
 
-var checaIdade = function () {
+function checaIdade(idade) {
     return new Promise(function (resolve, reject) {
-        if (inputElement.value >= 18){
-            resolve();
-        } else {
-            reject();
-        }
+        setTimeout(function () {
+            return idade >= 18 ? resolve() : reject();
+        }, 1000)
     });
-};
+}
 
-checaIdade(50)
+checaIdade(inputElement.value)
     .then(function () {
         console.log("maior de idade");
     })
     .catch(function () {
         console.warn("Menor de idade");
     });
-}while (inputElement.value < 0);
