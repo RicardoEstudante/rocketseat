@@ -15,3 +15,4 @@ const user = {
 
 const userTwo = { ...user, nome: 'Ricardo Carvalho' };
 console.log(userTwo);
+
